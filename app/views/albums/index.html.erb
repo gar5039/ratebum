@@ -1,1 +1,9 @@
-<h1>Welcome to Ratebum! Rate your favorite albums.</h1>
+<% @albums.each do |album| %>
+  <div>
+    <h1><%= album.artist %></h1><br />
+    <i><%= album.title %></i><br />
+    <p><%= album.year %></p><br />
+  </div>
+
+  <hr />
+<% end %>
